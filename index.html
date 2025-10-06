@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel de Notas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h1>Panel de Notas</h1>
+      </header>
+      <main>
+        <section class="input-section">
+          <textarea
+            id="note-input"
+            placeholder="Escribe una nota..."
+          ></textarea>
+          <button id="add-note">Agregar Nota</button>
+        </section>
+        <section id="notes-list" class="notes-grid"></section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

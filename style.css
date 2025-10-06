@@ -1,0 +1,130 @@
+:root {
+  --bg: #73e6b6;
+  --card: #f3fc7a;
+  --accent: #12635c;
+  --text: #12635c;
+  --danger: #c7344f;
+  --success: #3f4bf7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 0;
+  color: var(--accent);
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#note-input {
+  flex: 1;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  resize: none;
+  background: var(--card);
+  color: var(--text);
+}
+
+#note-input:focus {
+  outline: none;
+  box-shadow: 0 0 5px var(--accent);
+}
+
+#note-input::placeholder {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text);
+  opacity: 0.7;
+}
+
+#add-note {
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 0 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: bold;
+}
+
+#add-note:hover {
+  background: #472be6;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.note {
+  background: var(--card);
+  border-radius: 15px;
+  padding: 10px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word;
+}
+
+.note-text {
+  white-space: pre-wrap;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+  color: var(--text);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+.edit-btn:hover {
+  color: var(--success);
+  transform: scale(1.2);
+}
+
+.delete-btn:hover {
+  color: var(--danger);
+  transform: scale(1.2);
+}
