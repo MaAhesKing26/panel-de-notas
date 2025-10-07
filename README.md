@@ -10,7 +10,7 @@ Desarrollada como proyecto base para practicar fundamentos de desarrollo web y c
 - Crear, edita y eliminar.
 - Guardado automatico con **LocalStorage**.
 - Interfaz moderna y responsiva
-- Control de versiones con ramas (`dev `y `main)
+- Control de versiones con ramas (`dev` y `main`)
 
 ---
 
@@ -36,7 +36,7 @@ Desarrollada como proyecto base para practicar fundamentos de desarrollo web y c
 ## Como ejecturar el proyecto
 
 - Clona el repositorio.
-- Abri el archivo index.html en tu navegador.
+- Abri el archivo `index.html` en tu navegador.
 
 ---
 
