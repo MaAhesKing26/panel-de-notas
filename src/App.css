@@ -1,0 +1,24 @@
+:root {
+  --bg: #73e6b6;
+  --card: #f3fc7a;
+  --accent: #12635c;
+  --text: #12635c;
+  --danger: #c7344f;
+  --success: #3f4bf7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text);
+
+  text-align: center;
+  padding: 20px;
+}
