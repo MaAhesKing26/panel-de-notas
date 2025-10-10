@@ -21,6 +21,10 @@ body {
   justify-content: center;
 }
 
+main {
+  min-height: 80vh;
+}
+
 .app {
   width: 100%;
   max-width: 800px;
